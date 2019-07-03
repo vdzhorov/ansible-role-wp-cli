@@ -1,0 +1,7 @@
+---
+
+- name: Download Wordpress CLI
+  get_url:
+    url: '{{ wp_cli_download_url }}'
+    dest: '{{ wp_cli_destination }}'
+    mode: 0755
